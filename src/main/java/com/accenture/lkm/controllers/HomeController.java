@@ -9,10 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class Controller {
 	
 	@RequestMapping(value = {"/", "/", "/default", "/index"}, method = RequestMethod.GET)
-	public ModelAndView () {
+	public ModelAndView home() {
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("title", "Accenture - High performance. Delivered");
-		mv.addObject("greeting", "Welcome Varun in the world of Jenkins!");
+		mv.addObject("greeting", "Welcome in the world of Jenkins!");
 		return mv;
 	}
 	
