@@ -12,7 +12,7 @@ public class Controller {
 	public ModelAndView () {
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("title", "Accenture - High performance. Delivered");
-		mv.addObject("greeting", "Welcome Varun in the world of JEnkins!");
+		mv.addObject("greeting", "Welcome Varun in the world of Jenkins!");
 		return mv;
 	}
 	
