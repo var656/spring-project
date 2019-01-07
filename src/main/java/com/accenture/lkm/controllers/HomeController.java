@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HomeController {
+public class Controller {
 	
-	@RequestMapping(value = {"/", "/home", "/default", "/index"}, method = RequestMethod.GET)
-	public ModelAndView home() {
+	@RequestMapping(value = {"/", "/", "/default", "/index"}, method = RequestMethod.GET)
+	public ModelAndView () {
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("title", "Accenture - High performance. Delivered");
-		mv.addObject("greeting", "Welcome to Orchestrating with Jenkins Training!");
+		mv.addObject("greeting", "Welcome Varun in the world of JEnkins!");
 		return mv;
 	}
 	
